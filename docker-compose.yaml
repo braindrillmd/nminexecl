@@ -1,0 +1,11 @@
+services:
+  nminexcel-service:
+    container_name: "nminexcel-service"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+#    volumes:
+#      - "D:/temp/data:/app/data/mnt"
